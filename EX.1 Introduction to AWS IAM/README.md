@@ -60,12 +60,13 @@ The objective of this lab is to understand how AWS Identity and Access Managemen
 
 
 ## Workflow
+```
 1. Accessed IAM console and reviewed users and groups.  
 2. Inspected policy permissions attached to groups.  
 3. Assigned users to groups based on their roles.  
 4. Logged in as each IAM user using the sign-in URL.  
 5. Validated permissions by accessing AWS services.  
-
+```
 
 ## Learning Outcomes
 - Understood the role of IAM in AWS security.  
