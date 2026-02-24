@@ -5,6 +5,8 @@ Name : MOHAMMED SHAHITH S
 
 Reg.no :212223060162
 
+Slot :T1 Blended-3
+
 ## Title
 Introduction to AWS Identity and Access Management (IAM)
 
