@@ -4,6 +4,8 @@
 
 * **Name**: MOHAMMED SHAHITH S
 * **Register Number**: 212223060162
+* **Slot** : T1 Blended-3
+
 
 ---
 
