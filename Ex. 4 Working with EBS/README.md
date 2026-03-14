@@ -37,7 +37,7 @@ The objective of this experiment is to understand how Amazon Elastic Block Store
 ### Task 1: Explore Amazon EBS
 
 Explore the Amazon EBS service through the EC2 dashboard. Observe different volume types such as General Purpose SSD (gp2/gp3), Provisioned IOPS SSD, Throughput Optimized HDD, and Cold HDD.
-
+              
 ---
 
 ### Task 2: Create an EBS Volume
@@ -92,6 +92,9 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 ### Screenshot 1: EBS Volume Created
 
 (Insert Screenshot Here)
+
+
+
 
 
 ---
