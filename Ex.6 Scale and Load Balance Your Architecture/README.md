@@ -1,9 +1,16 @@
 # Lab 6 – Scale and Load Balance Your Architecture
 
+## Author
+
+
+* **Name**: MOHAMMED SHAHITH S 
+* **Register Number**: 212223060162
+* **Date of Submission**: 19-03-2026
+---
+
 ## Title
 
 Scale and Load Balance Your Architecture
-Author : your name   Reg no : yours   Date :
 
 ---
 
@@ -64,14 +71,38 @@ Students test the setup by generating traffic and observing automatic scaling an
 
 ---
 
-## Workflow (To be filled by Student)
+## Workflow (Student Explanation)
 
-Describe step-by-step how you performed this experiment in your own words.
+1. I reviewed the existing EC2-based application architecture that I had created in previous experiments to understand how the instances were configured and how the application was being accessed.
+
+2. I created a Launch Template by defining the EC2 configuration, including the Amazon Machine Image (AMI), instance type, key pair, security group, and user data script for automatic application setup during instance launch.
+
+3. Using the launch template, I created an Auto Scaling Group. I configured the minimum, maximum, and desired capacity values to control how many EC2 instances should run based on demand. I also selected the appropriate VPC and subnets.
+
+4. Next, I created an Application Load Balancer and configured a target group. I set the protocol and port (HTTP/HTTPS) and defined health check settings to monitor the EC2 instances.
+
+5. I attached the Auto Scaling Group to the target group so that any instances launched by the Auto Scaling Group would automatically register with the Load Balancer.
+
+6. I configured scaling policies based on CPU utilization. I created Amazon CloudWatch alarms to automatically increase the number of instances when CPU usage was high and decrease them when CPU usage was low.
+
+7. Finally, I tested the setup by generating traffic to the Load Balancer DNS name. I observed that the traffic was distributed evenly across instances and that additional instances were launched automatically when the CPU utilization threshold was exceeded.
 
 ---
 
 ## Output Screenshots 
 
+## Created LoadBalancer
+<img width="1920" height="1080" alt="Screenshot (273)" src="https://github.com/user-attachments/assets/71c9b2bc-7238-488c-acc0-972d0f331b65" />
+
+
+## Created LabConfig
+
+<img width="1920" height="1080" alt="Screenshot (272)" src="https://github.com/user-attachments/assets/f6e2da38-218e-48b8-96e8-8778c2c0f4fa" />
+
+## Dynamic Scaling Policy created
+
+<img width="1920" height="1080" alt="Screenshot (276)" src="https://github.com/user-attachments/assets/1f843270-5d59-4f19-a562-946c838769dc" />
+<img width="1920" height="1080" alt="Screenshot (277)" src="https://github.com/user-attachments/assets/85bc432b-fea1-4d7f-86a1-33c527026cfe" />
 
 ---
 
